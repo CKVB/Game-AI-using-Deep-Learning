@@ -19,8 +19,8 @@ button_font="-family {Segoe UI Historic} -size 24 -slant italic"
 def execute():
 	global condition
 	condition=True
+
 	def move_forward():
-		
 		temp.append('w')
 		keyboard.press('w')
 		keyboard.release('a')
@@ -30,13 +30,9 @@ def execute():
 		time.sleep(0.3)
 	
 	def move_left():
-		
 		keyboard.press('s')
 		time.sleep(0.4)
 		keyboard.release('s')
-		
-		
-		
 		temp.append('a')
 		keyboard.press('a')
 		keyboard.release('w')
@@ -47,12 +43,9 @@ def execute():
 		
 		
 	def move_right():
-		
 		keyboard.press('s')
 		time.sleep(0.4)
 		keyboard.release('s')
-		
-		
 		temp.append('d')
 		keyboard.press('d')
 		keyboard.release('a')
@@ -63,7 +56,6 @@ def execute():
 	
 	
 	def apply_break():
-		
 		temp.append('s')
 		keyboard.press('s')
 		keyboard.release('a')
@@ -100,10 +92,8 @@ def execute():
 		elif prediction_2[2]==1 and prediction_1[2]==1 and forward_reverse_prediction[0]==1:
 			move_forward()
 		elif prediction_1[0]==1 and prediction_2[0]==1 and left_right_prediction[0]==1:
-			
 			move_left()
 		elif prediction_1[1]==1 and prediction_2[1]==1 and left_right_prediction[1]==1:
-			
 			move_right()
 		else:
 			choice("Neutral")
