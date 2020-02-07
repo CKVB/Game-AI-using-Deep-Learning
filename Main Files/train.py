@@ -1,4 +1,3 @@
-import os
 import cv2,os
 from grabscreen import grab_screen
 from glob import glob
