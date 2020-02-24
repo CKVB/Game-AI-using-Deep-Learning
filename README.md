@@ -1,2 +1,2 @@
-# Game-AI-using-Deep-Learning
+# Game AI using Deep Learning
 Self Driving Car
